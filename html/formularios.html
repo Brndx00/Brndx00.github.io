@@ -1,0 +1,128 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Documento sin título</title>
+<link href="style_page.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+<header>
+  <h1>Formularios en html</h1>
+</header>
+		<nav>
+		  <ul class="menu">
+		    <li><a href="../index.html">Inicio</a></li>
+			<li><a href="Formatos_Texto.html">Formatos de Texto</a></li>
+		    <li><a href="listas.html">Listas</a></li>
+		    <li><a href="enlaces(2).html">Enlaces</a></li>
+			<li><a href="tablas.html">Tablas</a></li>
+			<li><a href="imagenes.html">Imágenes</a></li>
+			<li><a href="audio.html">Audio</a></li>
+			<li><a href="video.html">Video</a></li>
+			<li><a href="formularios.html">Formulario</a></li> 
+          </ul>
+		</nav>
+<main>
+  <section>
+    <h2>Formulario</h2>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem adipisci quibusdam amet magnam tempora sit velit quaerat. Cupiditate ex iusto rerum officia laudantium. Beatae iusto et odio, sapiente doloremque nulla.</p>
+    <form id="form1" name="form1" method="post">
+      <label for="Nombre">Nombre:</label>
+      <input type="text" name="Nombre" id="Nombre">
+		<br>
+		<br>
+      <label for="Apellido">Apellido:</label>
+      <input type="text" name="Apellido" id="Apellido">
+		 <br>
+		<br>
+      <input type="submit" name="Boton1" id="Boton1" value="Enviar">
+     </form>
+  </section>
+  <section>
+    <h2>Este es el contenido de la etiqueta H2 de diseño</h2>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste, voluptates, rerum, dolor voluptas dolore soluta quasi, inventore architecto in assumenda cum amet nam numquam molestias. Omnis hic ut reiciendis mollitia.</p> <br>
+    <form id="form2" name="form2" method="get">
+	  <label><br>
+        ¿De qué país nos visitas?</label>
+      <select name="País" id="país">
+        <option value="mx">Mexico</option>
+        <option value="us">Estados Unidos</option>
+        <option value="esp">España</option>
+        <option value="ar">Argentina</option>
+        <option value="co">Colombia</option>
+        <option value="it">Italia</option>
+      </select>
+		<br><br>
+      <label>Género&nbsp;</label>
+      <p>
+        <label>
+          <input type="radio" name="G&eacute;nero" value="Femenino" id="Geacutenero_0">
+          Femenino</label>
+        <br>
+        <label>
+          <input type="radio" name="G&eacute;nero" value="Masculino" id="Geacutenero_1">
+          Masculino</label>
+        <br>
+      </p>
+      <label>¿Cuál será el hospedaje durante tu estancia?</label>
+      <table width="200">
+        <tr>
+          <td><label>
+            <input type="checkbox" name="Residencia Temporal" value="Hotel" id="ResidenciaTemporal_0">
+            Hotel</label></td>
+        </tr>
+        <tr>
+          <td><label>
+            <input type="checkbox" name="Residencia Temporal" value="Particular" id="ResidenciaTemporal_1">
+            Domicilio de amigos/familia</label></td>
+        </tr>
+        <tr>
+          <td><label>
+            <input type="checkbox" name="Residencia Temporal" value="Airbnb" id="ResidenciaTemporal_2">
+            Airbnb</label></td>
+        </tr>
+      </table>
+<br><br>
+      <input type="submit" name="Boton2" id="Boton2" value="Enviar">
+    </form>
+  </section>
+  <section>
+    <h2>Formulario de contacto&nbsp;</h2>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste, voluptates, rerum, dolor voluptas dolore soluta quasi, inventore architecto in assumenda cum amet nam numquam molestias. Omnis hic ut reiciendis mollitia.</p>
+    <form id="form3" name="form3" method="get">
+      <label for="Nombre1">Nombre:</label>
+      <input name="Nombre1" type="text" required="required" id="Nombre1" form="form3">
+      <label for="Email1">Email:</label>
+      <input name="Email1" type="email" required="required" id="Email1">
+      <label for="Comentarios1">Comentarios:</label>
+      <textarea name="Comentarios1" rows="6" maxlength="150" required="required" id="Comentarios1" placeholder="Escribe tu mensaje"></textarea>
+      <input name="boton3" type="submit" id="boton3" formaction="procesamiento.html" value="Enviar">
+    </form>
+</section>
+  <section>
+    <h2>Formulario, personal de limpieza&nbsp;</h2>
+    <p>Lllena este formulario si es de tu interés formar parte de nuestro equipo de limpieza.</p>
+    <form id="form4" name="form3" method="get">
+<label for="Nombre2">Nombre:</label><br>
+      <input name="Nombre2" type="text" required="required" id="Nombre2" form="form3"><br><br>
+		<label for="telefono2">Teléfono:</label>
+		<br>
+      <input name="telefono2" type="tel" required="required" id="telefono2"><br><br>
+		<label for="Email2">Email:</label><br>
+      <input name="Email2" type="email" required="required" id="Email2"><br><br>
+      <label for="Día2">Diá y Fecha Disponibles:</label>
+      <br>
+      <input name="Día2" type="datetime" required="required" id="Día2" value="2022-00-00T00:00:00Z"><br><br>
+      <label for="Comentarios2">¿Cómo se organiza limpiando una casa?&nbsp; &nbsp; :</label>
+      <br>
+      <textarea name="Comentarios2" rows="6" maxlength="150" required="required" id="Comentarios2" placeholder="Escribe tu mensaje"></textarea><br><br>
+      <input name="boton" type="submit" id="boton" formaction="procesamiento.html" value="Enviar">
+    </form>
+  </section>
+</main>
+<footer>
+  <h6>Elaborado por: Brenda González Carrasco</h6>
+&nbsp;</footer>
+</body>
+</html>

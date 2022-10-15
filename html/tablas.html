@@ -1,0 +1,374 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Documento sin título</title>
+<link href="style_page.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+ <header>
+  <h1>Tablas en html</h1>
+</header>
+		<nav>
+		  <ul class="menu">
+		    <li><a href="../index.html">Inicio</a></li>
+			<li><a href="Formatos_Texto.html">Formatos de Texto</a></li>
+		    <li><a href="listas.html">Listas</a></li>
+		    <li><a href="enlaces(2).html">Enlaces</a></li>
+			<li><a href="tablas.html">Tablas</a></li>
+			<li><a href="imagenes.html">Imágenes</a></li>
+			<li><a href="audio.html">Audio</a></li>
+			<li><a href="video.html">Video</a></li>
+			<li><a href="formularios.html">Formulario</a></li> 
+          </ul>
+		</nav>
+<main>
+  <section>
+    <h2>Tabla desde código</h2>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum aspernatur, porro, tempore ratione saepe error mollitia repellat amet molestiae eos velit animi <a href="enlaces(2).html">quidem qui quod deserunt fuga</a>, ab sit nisi maxime consectetur aperiam suscipit, blanditiis. Voluptas aliquid, facilis dolores ratione deserunt iusto atque delectus animi, natus ipsa, odio aspernatur veritatis!</p>
+	<table id="table_1">
+		<thead>
+			<tr>
+				<th>Nombre</th>
+				<th>Taller</th>
+				<th>Email</th>
+				<th>Cuota de taller</th>
+			</tr>	
+		</thead>
+		<tbody>
+			<tr>
+				<td>Rosa Lopez</td>
+				<td>Pintura</td>
+				<td>rosa@hotmail.com</td>
+				<td>800</td>
+			</tr>
+			<tr>
+				<td>Rodrigo Hernández</td>
+				<td>Foto</td>
+				<td>Rodri14@gmail.com</td>
+				<td>1200</td>
+			</tr>
+			<tr>
+				<td>Miguel Díaz</td>
+				<td>Pintura</td>
+				<td>mikecarrs@gmail.com</td>
+				<td>800</td>
+			</tr>
+			<tr>
+				<td>Verónica Sánchez</td>
+				<td>Foto</td>
+				<td>veritos@outlook.com</td>
+				<td>1200</td>
+			</tr>
+			<tr>
+				<td>Fernando Gomez</td>
+				<td>Forja</td>
+				<td>fers_09@hotmail.com</td>
+				<td>300</td>
+			</tr>
+			<tfoot>
+				<tr>
+					<td></td>
+					<td></td>
+				<td>TOTAL INSCRIPCIÓN</td>
+				<td>4300</td>
+				</tr>
+			</tfoot>
+		</tbody>	
+	</table>
+</section>
+  <section>
+    <h2>Tabla con estio css y uso rowspan&nbsp; &nbsp;</h2>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum aspernatur, porro, tempore ratione saepe error mollitia repellat amet molestiae eos velit animi </p>
+    <p><a href="enlaces(2).html">quidem qui quod deserunt fuga</a></p>
+<p>, ab sit nisi maxime consectetur aperiam suscipit, blanditiis. Voluptas aliquid, facilis dolores ratione deserunt iusto atque delectus animi, natus ipsa, odio aspernatur veritatis!</p>
+	  <table id="table_3">
+      <thead>
+        <tr>
+          <th>Nombre</th>
+          <th>Taller</th>
+          <th>Email</th>
+          <th>Cuota de taller</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Rosa Lopez</td>
+          <td>Pintura</td>
+          <td>rosa@hotmail.com</td>
+          <td>800</td>
+        </tr>
+        <tr>
+          <td>Rodrigo Hernández</td>
+          <td>Foto</td>
+          <td>Rodri14@gmail.com</td>
+          <td>1200</td>
+        </tr>
+        <tr>
+          <td>Miguel Díaz</td>
+          <td>Pintura</td>
+          <td>mikecarrs@gmail.com</td>
+          <td>800</td>
+        </tr>
+        <tr>
+          <td>Verónica Sánchez</td>
+          <td>Foto</td>
+          <td>veritos@outlook.com</td>
+          <td>1200</td>
+        </tr>
+        <tr>
+          <td>Fernando Gomez</td>
+          <td>Forja</td>
+          <td>fers_09@hotmail.com</td>
+          <td>300</td>
+        </tr>
+      <tfoot>
+        <tr>
+          <!--<td></td>
+          <td></td>-->
+          <td colspan="3" style="background-color: chartreuse;font-weight: bold; color: darkgreen">TOTAL INSCRIPCIÓN</td>
+          <td>4300</td>
+        </tr>
+      </tfoot>
+    </tbody>
+  
+    </table>
+  </section>
+  <section>
+<h2>Tabla con cebra horizontal o filas&nbsp;</h2>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum aspernatur, porro, tempore ratione saepe error mollitia repellat amet molestiae eos velit animi <a href="enlaces(2).html">quidem qui quod deserunt fuga</a>, ab sit nisi maxime consectetur aperiam suscipit, blanditiis. Voluptas aliquid, facilis dolores ratione deserunt iusto atque delectus animi, natus ipsa, odio aspernatur veritatis!</p>
+    <table width="100%" border="1" cellspacing="5" id="tabla_4">
+      <thead>
+		<tr>
+          <th scope="col">&nbsp;Nombre</th>
+          <th scope="col">&nbsp;Correo Electrónico</th>
+          <th scope="col">&nbsp;Teléfono</th>
+          <th scope="col">Edad&nbsp;</th>
+          <th scope="col">Deporte&nbsp;</th>
+        </tr>
+		</thead>
+		<tbody>
+        
+        <tr>
+          <td>&nbsp;América Huerta</td>
+          <td>&nbsp;ame45_@hotmail.com</td>
+          <td>&nbsp;2223851982</td>
+          <td>&nbsp;13</td>
+          <td>&nbsp;Natación</td>
+        </tr>
+        <tr>
+          <td>&nbsp;Luis Lezama</td>
+          <td>&nbsp;luisito33_ho@outlook</td>
+          <td>&nbsp;2227938471</td>
+          <td>&nbsp;15</td>
+          <td>&nbsp;Frontennis</td>
+        </tr>
+        <tr>
+          <td>&nbsp;Tomas García</td>
+          <td>&nbsp;tomas0gar_2@gmail.com</td>
+          <td>&nbsp;2273195839</td>
+          <td>&nbsp;14</td>
+          <td>&nbsp;Voleibol</td>
+        </tr>
+        <tr>
+          <td>&nbsp;Yolanda Lopez</td>
+          <td>&nbsp;yolisestrella@hotmai.com</td>
+          <td>&nbsp;2226093851</td>
+          <td>&nbsp;18</td>
+          <td>&nbsp;Basquet</td>
+        </tr>
+      </tbody>
+    </table>
+</section>
+  <section>
+    <h2>Tabla con cebras en vertical o columna&nbsp;</h2>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum aspernatur, porro, tempore ratione saepe error mollitia repellat amet molestiae eos velit animi <a href="enlaces(2).html">quidem qui quod deserunt fuga</a>, ab sit nisi maxime consectetur aperiam suscipit, blanditiis. Voluptas aliquid, facilis dolores ratione deserunt iusto atque delectus animi, natus ipsa, odio aspernatur veritatis!</p>
+    <table width="100%" border="1" cellspacing="5" id="tabla_5">
+      <thead>
+        <tr>
+          <th scope="col">&nbsp;Nombre</th>
+          <th scope="col">&nbsp;Correo Electrónico</th>
+          <th scope="col">&nbsp;Teléfono</th>
+          <th scope="col">Edad&nbsp;</th>
+          <th scope="col">Deporte&nbsp;</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>&nbsp;América Huerta</td>
+          <td>&nbsp;ame45_@hotmail.com</td>
+          <td>&nbsp;2223851982</td>
+          <td>&nbsp;13</td>
+          <td>&nbsp;Natación</td>
+        </tr>
+        <tr>
+          <td>&nbsp;Luis Lezama</td>
+          <td>&nbsp;luisito33_ho@outlook</td>
+          <td>&nbsp;2227938471</td>
+          <td>&nbsp;15</td>
+          <td>&nbsp;Frontennis</td>
+        </tr>
+        <tr>
+          <td>&nbsp;Tomas García</td>
+          <td>&nbsp;tomas0gar_2@gmail.com</td>
+          <td>&nbsp;2273195839</td>
+          <td>&nbsp;14</td>
+          <td>&nbsp;Voleibol</td>
+        </tr>
+        <tr>
+          <td>&nbsp;Yolanda Lopez</td>
+          <td>&nbsp;yolisestrella@hotmai.com</td>
+          <td>&nbsp;2226093851</td>
+          <td>&nbsp;18</td>
+          <td>&nbsp;Basquet</td>
+        </tr>
+      </tbody>
+    </table>
+</section>
+  <section>
+    <h2>Tabla flotante (hover)</h2>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum aspernatur, porro, tempore ratione saepe error mollitia repellat amet molestiae eos velit animi <a href="enlaces(2).html">quidem qui quod deserunt fuga</a>, ab sit nisi maxime consectetur aperiam suscipit, blanditiis. Voluptas aliquid, facilis dolores ratione deserunt iusto atque delectus animi, natus ipsa, odio aspernatur veritatis!</p>
+    <table width="100%" border="1" cellspacing="5" id="tabla_6">
+      <thead>
+        <tr>
+          <th scope="col">&nbsp;Nombre</th>
+          <th scope="col">&nbsp;Correo Electrónico</th>
+          <th scope="col">&nbsp;Teléfono</th>
+          <th scope="col">Edad&nbsp;</th>
+          <th scope="col">Deporte&nbsp;</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>&nbsp;América Huerta</td>
+          <td>&nbsp;ame45_@hotmail.com</td>
+          <td>&nbsp;2223851982</td>
+          <td>&nbsp;13</td>
+          <td>&nbsp;Natación</td>
+        </tr>
+        <tr>
+          <td>&nbsp;Luis Lezama</td>
+          <td>&nbsp;luisito33_ho@outlook</td>
+          <td>&nbsp;2227938471</td>
+          <td>&nbsp;15</td>
+          <td>&nbsp;Frontennis</td>
+        </tr>
+        <tr>
+          <td>&nbsp;Tomas García</td>
+          <td>&nbsp;tomas0gar_2@gmail.com</td>
+          <td>&nbsp;2273195839</td>
+          <td>&nbsp;14</td>
+          <td>&nbsp;Voleibol</td>
+        </tr>
+        <tr>
+          <td>&nbsp;Yolanda Lopez</td>
+          <td>&nbsp;yolisestrella@hotmai.com</td>
+          <td>&nbsp;2226093851</td>
+          <td>&nbsp;18</td>
+          <td>&nbsp;Basquet</td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+  <section>
+    <h2>Tabla receptiva</h2>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem voluptate esse, numquam commodi, quibusdam dolores id accusantium totam tempore et, ipsam, sint cupiditate unde! Neque iste provident quas nisi dolorem impedit obcaecati, alias, reiciendis eaque vitae fuga fugiat corporis atque.</p>
+    <div id="tabla_receptiva">
+      <table border="1" cellspacing="5" id="tabla_7">
+        <tbody>
+          <tr>
+            <th scope="col">Nombre&nbsp;</th>
+            <th scope="col">Puntos&nbsp;</th>
+            <th scope="col">Puntos&nbsp;</th>
+            <th scope="col">Puntos&nbsp;</th>
+            <th scope="col">Puntos&nbsp;</th>
+            <th scope="col">Puntos&nbsp;</th>
+            <th scope="col">Puntos&nbsp;</th>
+            <th scope="col">&nbsp;Puntos</th>
+            <th scope="col">Puntos&nbsp;</th>
+            <th scope="col">Puntos&nbsp;</th>
+            <th scope="col">Puntos&nbsp;</th>
+            <th scope="col">&nbsp;Puntos</th>
+            <th scope="col">Puntos&nbsp;</th>
+            <th scope="col">&nbsp;Puntos</th>
+            <th scope="col">Puntos&nbsp;</th>
+          </tr>
+          <tr>
+            <td>&nbsp;Julia</td>
+            <td>&nbsp;40</td>
+            <td>&nbsp;79</td>
+            <td>&nbsp;86</td>
+            <td>&nbsp;67</td>
+            <td>&nbsp;90</td>
+            <td>&nbsp;79</td>
+            <td>&nbsp;80</td>
+            <td>&nbsp;99</td>
+            <td>&nbsp;100</td>
+            <td>&nbsp;78</td>
+            <td>&nbsp;89</td>
+            <td>&nbsp;99</td>
+            <td>&nbsp;80</td>
+            <td>&nbsp;80</td>
+          </tr>
+          <tr>
+            <td>&nbsp;Brenda</td>
+            <td>&nbsp;89</td>
+            <td>&nbsp;89</td>
+            <td>&nbsp;100</td>
+            <td>&nbsp;97</td>
+            <td>&nbsp;78</td>
+            <td>&nbsp;64</td>
+            <td>&nbsp;63</td>
+            <td>&nbsp;83</td>
+            <td>&nbsp;48</td>
+            <td>&nbsp;36</td>
+            <td>&nbsp;13</td>
+            <td>&nbsp;62</td>
+            <td>&nbsp;90</td>
+            <td>&nbsp;90</td>
+          </tr>
+          <tr>
+            <td>&nbsp;Ariadna</td>
+            <td>&nbsp;90</td>
+            <td>&nbsp;79</td>
+            <td>&nbsp;58</td>
+            <td>&nbsp;68</td>
+            <td>&nbsp;69</td>
+            <td>&nbsp;54</td>
+            <td>&nbsp;74</td>
+            <td>&nbsp;26</td>
+            <td>&nbsp;79</td>
+            <td>&nbsp;67</td>
+            <td>&nbsp;62</td>
+            <td>&nbsp;68</td>
+            <td>&nbsp;74</td>
+            <td>&nbsp;75</td>
+          </tr>
+          <tr>
+            <td>&nbsp;Mario</td>
+            <td>&nbsp;34</td>
+            <td>&nbsp;56</td>
+            <td>&nbsp;97</td>
+            <td>&nbsp;35</td>
+            <td>&nbsp;98</td>
+            <td>&nbsp;32</td>
+            <td>&nbsp;83</td>
+            <td>&nbsp;96</td>
+            <td>&nbsp;80</td>
+            <td>&nbsp;52</td>
+            <td>&nbsp;47</td>
+            <td>&nbsp;42</td>
+            <td>&nbsp;64</td>
+            <td>&nbsp;47</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+</section>
+</main>
+<footer>
+  <h6>Elaborado por: Brenda González Carraso</h6>
+</footer>
+</body>
+</html>
